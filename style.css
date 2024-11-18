@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Cream+Soda&family=Crafty+Girls&family=IBM+Plex+Mono&display=swap');
+
+.ibm-plex-mono-regular {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.cherry-cream-soda-regular {
+    font-family: "Cherry Cream Soda", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.crafty-girls-regular {
+    font-family: "Crafty Girls", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+ .scene1 {
+    width: 100vw;
+    height: 100vh;
+    background-color: #9CD637;
+    position: fixed;
+    top: 0;
+    left:0;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+ } 
+
+
+h1 {
+  font-family:  "Crafty Girls";
+  font-size: 5vh;
+  text-align: left;
+  position: relative;
+  padding-left: 3vw;
+}
+
+h2 {
+  font-family: 'Cherry Cream Soda';
+  font-size: 3vh;
+  text-align: left;
+  position: relative;
+  padding: 5vh 0 0 5vw;
+}
+
+p {
+  font-family: 'IBM Plex Mono';
+  font-size: 2.5vh;
+  text-align: left;
+  position: relative;
+  padding: 2vh 2vw 0 5vw;
+  margin: 0;
+}
+
+.script {
+  width: 50vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.scene2 {
+  background-color: #FCB0B3;
+  width: 100vw;
+  height: 85vh;
+  position: sticky;
+  top: 15vh;
+  margin-top: 100vh;
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+}
+
+.animation1 {
+  width: 50vw;
+  height: 100vh;
+  position: relative;
+  left: 0;
+}
+.animation1 img {
+  width: 60vh;
+  height: 60vh;
+  margin: 30vh 10vw 0 0;
+}
+
+.animation2 {
+  width: 50vw;
+  height: 85vh;
+  position: relative;
+  left: 0;
+}
+.animation2 img {
+  width: 60vh;
+  height: 60vh;
+  margin: 15vh 10vw 0 0;
+}
+
+.scene3 {
+  background-color: #9CD637;
+  width: 100vw;
+  height: 85vh;
+  position: sticky;
+  top: 15vh;
+  margin-top: 100vh;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.cat{
+  position: absolute;
+  width: 100vw;
+  height: 80vh;
+  cursor: url('src/cursor.png'), auto;
+  display: flex;
+}
+
+#cat-img {
+  width: 30vh;
+  height: 30vh;
+  margin-left: 45vw;
+  margin-top: 40vh; 
+}
+
+#spin-img {
+  width: 30vh;
+  height: 30vh;
+  margin-left: 45vw;
+  margin-top: 40vh;
+  animation: spin 5s linear infinite;
+  position: absolute;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg) translateX(10vh) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(10vh) rotate(360deg);
+  }
+}
+
+#replay-button {
+  width: 10vw;
+  height: 10vh;
+  position: fixed;
+  bottom: 5vh;
+  right: 5vw;
+  padding: 2vh 2vw;
+  font-size: 2vh;
+  font-family: 'IBM Plex Mono';
+  cursor: pointer;
+  background-color: #FCB0B3;
+  border-color: black;
+}
+
+.loading {
+  width: 100vw;
+  height: 100vh;
+  background-color: #9CD637;
+  position: fixed;
+  top: 0;
+  left:0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#load-img {
+  width: 50vh;
+  height: 50vh;
+  margin-top: 20vh;
+  position: absolute;
+}
+
+#loading-bar {
+  width: 40vw;
+  height: 3vh;
+  background-color: #FCB0B3;
+  position: fixed;
+  bottom: 10vh;
+  left: 30vw;
+  border: 2px solid black;
+  border-radius: 10px;
+  animation: loading 5s linear forwards;
+}
+@keyframes loading {
+  from { width: 0; }
+  to   { width: 40vw; }
+}
+
+
+
+@media (max-width: 600px) {
+
+  .scene1 {
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 4vh;
+  }
+
+  h2 {
+    font-size: 2vh;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  .script {
+    width: 100vw;
+  }
+
+  .scene2 {
+    flex-direction: column;
+  }
+
+  .animation1 {
+    width: 100vw;
+    height: 50vh;
+    margin: 0 0 5vh 20vw;
+  }
+
+  .animation1 img {
+    width: 40vh;
+    height: 40vh;
+    margin: 5vh 30vw 0 0;
+  }
+
+  .animation2 {
+    width: 100vw;
+    height: 50vh;
+    margin: 0 0 5vh 20vw;
+  }
+
+  .animation2 img {
+    width: 40vh;
+    height: 40vh;
+    margin: 5vh 30vw 0 0;
+  }
+
+  .scene3 {
+    flex-direction: column;
+  }
+
+  .cat {
+    height: 60vh;
+    margin-top: 20vh;
+  }
+
+  #cat-img {
+    width: 20vh;
+    height: 20vh;
+    margin-left: 40vw;
+    margin-top: 30vh; 
+  }
+
+  #spin-img {
+    width: 20vh;
+    height: 20vh;
+    margin-left: 40vw;
+    margin-top: 15vh;
+  }
+
+  #replay-button {
+    width: 20vw;
+    height: 5vh;
+    font-size: 1.5vh;
+  }
+
+  #load-img {
+    width: 30vh;
+    height: 30vh;
+    margin-top: 20vh;
+  }
+
+  #loading-bar {
+    width: 60vw;
+    height: 2vh;
+  }
+}
