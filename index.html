@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>If You Give a Cat a Laser</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="The scripts and animations for a cat.">
+        <meta name="keywords" content="cat, laser, animation, script, interactive website">
+    </head>
+
+
+
+    <body>
+        <div class="loading">
+            <img id="load-img" src="src/loading.gif" alt="Loading Image">
+            <div id="loading-bar"></div>
+        </div>
+        
+        <div id="main-content" style="display: none;">
+
+            <div class="scene1">
+                
+                <div class="script" comment = 
+                '// “If you give a cat a laser, it will ____”
+
+                let laserPointerOn = false;
+                let response = "";
+                
+                if (laserPointerOn) {
+                response = "The cat chases the laser";
+                } else {
+                response = "The cat meows.";
+                }
+                
+                function mousePressed() {
+                laserPointerOn = !laserPointerOn;
+                }
+                '>
+                <h1>If You Give a Cat a Laser</h1>
+                <h2>Scene One</h2>
+                <p>A small, red dot appears, flickering near the wall. The cat's ears perk up, eyes sharpening as it spots the light.</p>
+                <p>Cat: (whispering in awe) "Oh! What's that? Could it be...a signal from…an alien spaceship?"</p>
+                <p>The red dot dances across the floor, taunting the cat. The cat’s pupils dilate as it hunkers down, ready to pounce.</p>    
+                <p>Cat: (scrambling after it, breathless) "Wait! Don't run! Don't run away!"</p>    
+                <p>The dot zigzags and swerves, leading the cat on a wild chase, bouncing from wall to wall, and skittering across the floor.</p>
+                <p>Cat: (desperately, paws stretching toward the dot) "Take me! Take me! I want to leave this planet!"</p>
+                </div>
+
+                <div class="animation1">
+                    <img src="src/scene1.gif" alt="cat chasing laser">
+                </div>
+
+            </div>
+
+            <div class="scene2">
+                <div class="script" title = 
+                'let action = "Human pets the cat.";
+                let response = "";
+                
+                    if (action === "Human pets the cat.") {
+                        response = "meow";
+                    } else if (action === "Human gives the cat a toy.") {
+                        response = "paw";
+                    } else {
+                        response = "The cat does nothing.";
+                    }'>
+                <h2>Scene Two</h2>
+                    <p>A fluffy CAT is lounging on a cozy blanket, looking aloof. A HUMAN HAND slowly enters the frame, reaching to pet the cat.</p>
+                    <p>Human Hand: (gently pets the cat)</p>
+                    <p>Cat: (tensing up, fur bristling) "Don't touch me!!"(hisses and swats at the hand)</p>
+                    <p>"Meow! Meow! Meow!"</p>
+                    <p>The human hand quickly retracts, then reappears holding a small, colorful MOUSE TOY. The hand offers it to the cat.</p>
+                    <p>Cat: (suddenly calm, eyeing the toy approvingly) "Much better."</p>
+                    <p>(begins to paw at the toy, batting it around with interest)</p>
+                    <p>The human hand slowly withdraws as the cat happily plays with the mouse toy.</p>    
+                </div>
+
+                <div class="animation2">
+                    <img src="src/scene2.gif" alt="cat playing with toy">
+                </div>
+
+            </div>
+
+            <div class="scene3">
+
+                <h2>Scene Three</h2>
+                <p>Now, it’s time to create a cat helicopter by yourself!</p>
+                <div class="cat">
+                    <img id ='cat-img' src="src/catSit1.png" alt="A cat sitting there">
+                    <img id="spin-img" src="src/catRun1.png" alt="A cat is running chasing the stiker.">
+                </div>
+                <button id="replay-button">Replay</button>
+            </div>
+
+        </div>
+
+    <script src="script.js"></script>
+    </body>
+
+
+</html>
